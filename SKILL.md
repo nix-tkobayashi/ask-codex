@@ -10,20 +10,6 @@ Executes the local `codex` CLI to get coding assistance.
 
 **Note:** This skill requires the `codex` CLI to be installed and available in your system's PATH.
 
-## バージョンチェック（毎回実行）
-
-スキル発動時に必ず以下を実行し、インストール済みバージョンを確認する：
-
-```bash
-codex --version
-```
-
-既知の最新バージョン: **0.132.0**
-
-- インストール済みバージョンが古い場合: ユーザーに警告を表示する
-  > ⚠️ Codex CLI のバージョンが古い可能性があります（インストール済み: X.X.X / 既知の最新: 0.132.0）。`npm update -g @openai/codex` でアップグレードを検討してください。
-- バージョンが一致または新しい場合: チェック通過（何も表示しない）
-
 ## 必須ルール
 
 - **`--skip-git-repo-check` を常に付ける** — Claude Code から呼び出す場合、カレントディレクトリが Codex の trusted directory に登録されていないため「Not inside a trusted directory」エラーになる
