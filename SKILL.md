@@ -13,7 +13,7 @@ Executes the local `codex` CLI to get coding assistance.
 ## 必須ルール
 
 - **`--skip-git-repo-check` を常に付ける** — Claude Code から呼び出す場合、カレントディレクトリが Codex の trusted directory に登録されていないため「Not inside a trusted directory」エラーになる
-- **`-m` オプションは付けない** — v0.132.0 以降はデフォルトが `gpt-5.5` になり、ChatGPT アカウント認証で正常に動作する
+- **`-m` オプションは付けない** — モデルを固定せず、常に最新モデルが自動選択されるようにする（`~/.codex/config.toml` にも `model` を固定しないこと）
 
 ## Quick start
 
